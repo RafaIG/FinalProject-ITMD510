@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.CustomerController">
+   <children>
+      <Label fx:id="lblError" layoutX="42.0" layoutY="335.0" prefHeight="17.0" prefWidth="9.0" text="" />
+      <TableView fx:id="tableUsers" layoutX="20.0" layoutY="69.0" prefHeight="235.0" prefWidth="568.0">
+        <columns>
+          <TableColumn fx:id="columnConcert" prefWidth="167.0" text="Concert" />
+          <TableColumn fx:id="columnArtist" prefWidth="83.0" text="Artist" />
+            <TableColumn fx:id="columnDate" text="Date" />
+            <TableColumn fx:id="columnCompleted" minWidth="0.0" prefWidth="69.0" text="Completed" />
+            <TableColumn fx:id="columnDescription" prefWidth="168.0" text="Description" />
+        </columns>
+      </TableView>
+      <Text fill="#b4f5b0" layoutX="46.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Costumer Concerts">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="delete" layoutX="425.0" layoutY="322.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="161.0" text="Remove from favourites" />
+      <Button contentDisplay="CENTER" layoutX="494.0" layoutY="26.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="92.0" text="Logout" />
+      <Button fx:id="searchOthers" layoutX="425.0" layoutY="356.0" mnemonicParsing="false" onAction="#search" prefHeight="17.0" prefWidth="161.0" text="Search other concerts" />
+   </children>
+</AnchorPane>

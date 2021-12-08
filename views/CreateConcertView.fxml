@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.CreateConcertController">
+   <children>
+      <TextField fx:id="txtConcertname" alignment="TOP_LEFT" layoutX="64.0" layoutY="121.0" prefHeight="25.0" prefWidth="174.0" />
+      <Button contentDisplay="CENTER" layoutX="151.0" layoutY="309.0" mnemonicParsing="false" onAction="#createConcert" prefHeight="32.0" prefWidth="298.0" text="Create Concert" />
+      <Text fill="#fcfcfc" fontSmoothingType="LCD" layoutX="70.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONCERTNAME:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblError" layoutX="70.0" layoutY="260.0" prefHeight="17.0" prefWidth="0.0" text="" />
+      <Text fill="#fcfcfc" fontSmoothingType="LCD" layoutX="297.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DESCRIPTION:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#fcfcfc" fontSmoothingType="LCD" layoutX="70.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATE:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtDescription" alignment="TOP_LEFT" layoutX="281.0" layoutY="120.0" prefHeight="148.0" prefWidth="264.0" promptText="Description  (max 500 characters)" />
+      <DatePicker fx:id="dateTable" layoutX="64.0" layoutY="199.0" />
+      <Text fill="#b4f5b0" layoutX="34.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Concert Pannel">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Text>
+      <Button contentDisplay="CENTER" layoutX="493.0" layoutY="38.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="92.0" text="Back" />
+   </children>
+</AnchorPane>

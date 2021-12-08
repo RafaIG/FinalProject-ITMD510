@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: bbbdbd;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.UserCreatedController">
+   <children>
+      <Button contentDisplay="CENTER" layoutX="81.0" layoutY="168.0" mnemonicParsing="false" onAction="#login" prefHeight="157.0" prefWidth="181.0" text="Login with this user" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Button>
+      <Button contentDisplay="CENTER" layoutX="336.0" layoutY="168.0" mnemonicParsing="false" onAction="#register" prefHeight="157.0" prefWidth="181.0" text="Register another user" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Button>
+      <Label fx:id="lblError" layoutX="70.0" layoutY="325.0" text="" />
+      <Text fill="#064a01" layoutX="91.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Created Succesfully!">
+         <font>
+            <Font name="System Bold Italic" size="37.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
